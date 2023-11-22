@@ -351,7 +351,18 @@ input {
   height: 40px;
 }
 
-.forma_otpravki{
-  padding: 103px;
+.forma_reg {
   background: linear-gradient(180deg, rgba(85, 154, 123, 0.92) 0%, rgba(212, 232, 219, 0.92) 88.96%);
+  padding-top: 61px;
+  min-height: 619px;
+}
+.block_bird_img_1 {
+  width: 224px;
+  height: 328px;
+  margin-top: 210px;
+}
+
+.block_bird_img_2 {
+  width: 309px;
+  height: 286px;
 }
