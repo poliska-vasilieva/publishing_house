@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway";
 }
 
 header {
@@ -48,11 +48,8 @@ nav {
 }
 .promo_header {
   color: #2E3126;
-  font-family: Inter;
   font-size: 48px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   letter-spacing: 38.4px;
   text-transform: uppercase;
   margin: 0;
@@ -100,20 +97,14 @@ nav {
 
 .info_title {
   color: #2D3025;
-  font-family: Inria Sans;
   font-size: 25px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 
 .info_tit {
   color: #2D3025;
-  font-family: Inria Sans;
   font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 500;;
   text-align: center;
   padding-top: 10px;
 }
@@ -147,21 +138,15 @@ nav {
 
 .values_tit {
   color: #283C3A;
-  font-family: Inria Sans;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   padding-top: 80px;
 }
 
 .values_text {
   color: #2D3025;
-  font-family: Inria Sans;
-  font-size: 25px;
-  font-style: normal;
+  font-size: 23px;
   font-weight: 500;
-  line-height: normal;
   padding-top: 10px;
 }
 
@@ -212,48 +197,29 @@ ul {
 
 .services_tit {
   color: #2D3025;
-  font-family: Inria Sans;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .services_text {
   color: #2D3025;
-  font-family: Inria Sans;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   padding-top: 15px;
 }
 
 .services_descr, .book_v_descr {
   color: #2D3025;
-  font-family: Inria Sans;
   font-size: 17px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-top: 5px;
 }
 .dignities_title, .forma_title {
   margin-top: 20px;
   color: #283C3A;
-  font-family: Inria Sans;
   font-size: 30px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-align: center;
-}
-
-.forma_block {
-  position: relative;
-  border-radius: 40px;
-  background: #D4E8DB;
-  padding: 30px; 
 }
 
 .forma_btn {
@@ -296,31 +262,22 @@ input {
 
 .book_v_text {
   color: #2D3025;
-  font-family: Inria Sans;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   
 }
 
 .book_v_tit {
   color: #2D3025;
-  font-family: Inria Sans;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   padding-top: 10px;
 }
 
 .price {
   color: #559A7B;
-  font-family: Inria Sans;
   font-size: 25px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   padding-top: 5px;
 }
 
@@ -357,12 +314,14 @@ input {
   min-height: 619px;
 }
 
-.reg_block {
-  width: 360px;
-  height: 400px;
+.forma_block {
+  position: relative;
   border-radius: 40px;
-  background: #B9DAC7;
+  background: #D4E8DB;
+  padding: 30px; 
 }
+
+
 .block_bird_img_1 {
   width: 224px;
   height: 328px;
@@ -376,11 +335,8 @@ input {
 
 input::placeholder {
   color: #559A7B;
-  font-family: Inria Sans;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-left: 20px;
 }
 
