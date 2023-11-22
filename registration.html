@@ -38,7 +38,13 @@
                 </div>
                 <div class="col-md-4">
                     <div class="reg_block">
-
+                        <form action="sendmail.php" method="post" class="forma_block">
+                            <input type="text" placeholder="ФИО" class="reg_input" required></input>
+                            <input type="email" placeholder="Email" class="reg_input" required></input>
+                            <input type="password" id="pass" name="password" minlength="8" class="reg_input"
+                                required></input>
+                            <button type="submit" class="forma_btn">Отправить</button>
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-4">
