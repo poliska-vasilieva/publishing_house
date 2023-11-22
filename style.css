@@ -1,0 +1,357 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: relative;
+  height: 50px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #559A7B;
+  z-index: 5;
+}
+
+.menu, .menu_f {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+.menu_link, .f_link {
+  color: #D4E8DB;
+  font-size: 19px;
+  font-weight: 300;
+}
+.menu_link:hover, .f_item:hover {
+  text-decoration: none;
+  color: #2D3025;
+}
+
+.menu_logo {
+  width: 330px;
+  height: 91px;
+}
+.menu_item, .f_item {
+  border-right: 2px dotted #2D3025;
+  padding-right: 28px;
+}
+
+.promo {
+  max-height: 674px;
+  background: url("../img/first_bg.png") center center/cover no-repeat;
+  padding: 280px 0 135px 0;
+}
+.promo_header {
+  color: #2E3126;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 38.4px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.promo_btn {
+  display: block;
+  margin: 175px auto 47px auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 40px;
+  background: #559A7B;
+  color: #E7E2D3;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.promo_btn:hover, .forma_btn:hover {
+  background-color: #66AC8D;
+}
+
+.info, .services, .book_v {
+  padding: 30px 0 40px 0;
+  background: linear-gradient(180deg, rgba(102, 172, 141, 0.50) 49.5%, rgba(185, 218, 199, 0.50) 100%);
+}
+
+.title {
+  position: relative;
+  margin-bottom: 0;
+  color: #2D3025;
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+.info_block {
+  margin: 33px 0;
+}
+
+.info_title {
+  color: #2D3025;
+  font-family: Inria Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.info_tit {
+  color: #2D3025;
+  font-family: Inria Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.info .info_block .info_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  background: #559A7B;
+  margin-left: 100px;
+}
+
+.info_subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 2;
+}
+
+.values, .dignities {
+  background: linear-gradient(180deg, #DCECE3 47.77%, #B4D9C6 100%);
+  padding: 30px 0 40px 0;
+}
+
+.values_tit {
+  color: #283C3A;
+  font-family: Inria Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 80px;
+}
+
+.values_text {
+  color: #2D3025;
+  font-family: Inria Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.info_img, .dignities_img {
+  width: 473px;
+  height: 473px;
+  border-radius: 40px;
+}
+
+.contact, .forma {
+  background: var(--3, linear-gradient(180deg, rgba(148, 201, 173, 0.70) 40.17%, rgba(227, 215, 194, 0.70) 100%));
+  padding: 30px 0 40px 0;
+}
+
+.contact_title, .dignities_title {
+  margin-top: 40px;
+}
+ul {
+  list-style-type: none;
+}
+
+.map_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; 
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(102, 172, 141, 0.90);
+}
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footer_wrapper {
+  padding-top: 32px;
+}
+
+.services_block {
+  border-radius: 40px;
+  padding: 40px 50px 30px 40px;
+  margin-top: 30px;
+  background: linear-gradient(180deg, #DCECE3 0%, #B2D5C6 100%);
+}
+
+.services_tit {
+  color: #2D3025;
+  font-family: Inria Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.services_text {
+  color: #2D3025;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 15px;
+}
+
+.services_descr, .book_v_descr {
+  color: #2D3025;
+  font-family: Inria Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 5px;
+}
+.dignities_title, .forma_title {
+  margin-top: 20px;
+  color: #283C3A;
+  font-family: Inria Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.forma_block {
+  position: relative;
+  border-radius: 40px;
+  background: #D4E8DB;
+  padding: 30px; 
+}
+
+.forma_btn {
+  margin: auto;
+  width: 200px;
+  height: 60px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 40px;
+  background: #559A7B;
+  color: #E7E2D3;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  }
+
+input {
+  border: 2px solid #559A7B;
+  border-radius: 40px;
+  width: 860px;
+  height: 50px;
+  background: none;
+  margin: 10px auto 10px auto;
+  font-weight: 400;
+  font-size: 28px;
+  color: #559A7B;
+}
+
+.book_v_block {
+  width: 300px;
+  height: 520px;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid #2D3025;
+}
+.book_v_img {
+  width: 250px;
+  height: 381px;
+}
+
+.book_v_text {
+  color: #2D3025;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+}
+
+.book_v_tit {
+  color: #2D3025;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.price {
+  color: #559A7B;
+  font-family: Inria Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 5px;
+}
+
+.lover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 90%;
+  background-color: #559A7B;
+  margin-left: 250px;
+  margin-right: 500px;
+}
+
+.heart {
+  width: 35px;
+  height: 40px;
+}
+
+.place_for_search {
+  width: 1000px;
+  height: 40px;
+}
+
+.button_for_search {
+  width: 40px;
+  height: 40px;
+}
+
+.forma_otpravki{
+  padding: 103px;
+  background: linear-gradient(180deg, rgba(85, 154, 123, 0.92) 0%, rgba(212, 232, 219, 0.92) 88.96%);
+}

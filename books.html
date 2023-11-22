@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Книги</title>
+    <link rel="shortcut icon" href="/img/m_logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu_item"><a href="index.html" class="menu_link">Валежина</a></li>
+                    <li class="menu_item"><a href="new_authors.html" class="menu_link">Новым авторам</a></li>
+                    <li class="menu_item"><a href="books.html" class="menu_link">Книги</a></li>
+                    <li class="menu_item"><a href="events.html" class="menu_link">Мероприятия</a></li>
+                    <li class="menu_item"><a href="personal_account.html" class="menu_link">Личный кабинет</a></li>
+                    <li class="menu_item"><a href="registration.html" class="menu_link">Регистрация</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="book_v">
+        <div class="container">
+            <div class="row">
+                <form>
+                    <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search"
+                        autofocus>
+                    <input class="button_for_search" type="submit"
+                        onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" "
+                        title="Начать поиск">
+                </form>
+                <script>
+                    var input, search, pr, result, result_arr, locale_HTML, result_store;
+
+                    function func() {
+                        locale_HTML = document.body.innerHTML;   // сохраняем в переменную весь body (Первоначальный)
+                    }
+                    setTimeout(func, 1000);  //ждем подгрузки Jsona и выполняем
+
+                    function FindOnPage(name, status) {
+
+                        input = document.getElementById(name).value; //получаем значение из поля в html
+
+                        if (input.length < 3 && status == true) {
+                            alert('Для поиска вы должны ввести три или более символов');
+                            function FindOnPageBack() { document.body.innerHTML = locale_HTML; }
+                        }
+
+                        if (input.length >= 3) {
+                            function FindOnPageGo() {
+
+                                search = '/' + input + '/g';  //делаем из строки регуярное выражение
+                                pr = document.body.innerHTML;   // сохраняем в переменную весь body
+                                result = pr.match(/(.*?)</g);  //отсекаем все теги и получаем только текст
+                                result_arr = [];   //в этом массиве будем хранить результат работы (подсветку)
+
+                                var warning = true;
+                                for (var i = 0; i < result.length; i++) {
+                                    if (result[i].match(eval(search)) != null) {
+                                        warning = false;
+                                    }
+                                }
+                                if (warning == true) {
+                                    alert('Не найдено ни одного совпадения');
+                                }
+
+                                for (var i = 0; i < result.length; i++) {
+                                    result_arr[i] = result[i].replace(eval(search), '<span style="background-color:yellow;">' + input + '</span>'); //находим нужные элементы, задаем стиль и сохраняем в новый массив
+                                }
+                                for (var i = 0; i < result.length; i++) {
+                                    pr = pr.replace(result[i], result_arr[i])  //заменяем в переменной с html текст на новый из нового массива
+                                }
+                                document.body.innerHTML = pr;  //заменяем html код
+                            }
+                        }
+                        function FindOnPageBack() { document.body.innerHTML = locale_HTML; }
+                        if (status) { FindOnPageBack(); FindOnPageGo(); } //чистим прошлое и Выделяем найденное
+                        if (!status) { FindOnPageBack(); } //Снимаем выделение
+                    }
+                </script>
+                <div class="col-md-10 offset-md-1">
+                    <h1 class="title">Вышедшие в продажу книги</h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="book_v_block">
+                        <img src="/img/book_1.jpg" class="book_v_img">
+                        <h2 class="book_v_tit">Пепел и перо</h2>
+                        <div class="book_v_text">Рейчел Кейн</div>
+
+                        <div class="price">517 ₽</div>
+                        <div class="lover">
+                            <img src="/img/heart.png" alt="heart" class="heart">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="book_v_block">
+                        <img src="/img/book_1.jpg" class="book_v_img">
+                        <h2 class="book_v_tit">Пепел и перо</h2>
+                        <div class="book_v_text">Рейчел Кейн</div>
+
+                        <div class="price">517 ₽</div>
+                        <div class="lover">
+                            <img src="/img/heart.png" alt="heart" class="heart">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="book_v_block">
+                        <img src="/img/book_1.jpg" class="book_v_img">
+                        <h2 class="book_v_tit">Пепел и перо</h2>
+                        <div class="book_v_text">Рейчел Кейн</div>
+
+                        <div class="price">517 ₽</div>
+                        <div class="lover">
+                            <img src="/img/heart.png" alt="heart" class="heart">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <ul class="menu_f">
+                <li class="f_item"><a href="#" class="f_link">© Валежина, 2023</a></li>
+                <li class="f_item"><a href="#" class="f_link">420089, Респ. Татарстан, Казань, ул. Даурская, 7</a>
+                </li>
+                <li class="f_item"><a href="#" class="f_link">+7 (932) 845 88 84</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
