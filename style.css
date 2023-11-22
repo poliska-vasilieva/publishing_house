@@ -43,7 +43,7 @@ nav {
 
 .promo {
   max-height: 674px;
-  background: url("./img/first_bg.png") center center/cover no-repeat;
+  background: url("first_bg.png") center center/cover no-repeat;
   padding: 280px 0 135px 0;
 }
 .promo_header {
