@@ -24,7 +24,6 @@
                     <li class="menu_item"><a href="index.html" class="menu_link">Валежина</a></li>
                     <li class="menu_item"><a href="new_authors.html" class="menu_link">Новым авторам</a></li>
                     <li class="menu_item"><a href="books.html" class="menu_link">Книги</a></li>
-                    <li class="menu_item"><a href="events.html" class="menu_link">Мероприятия</a></li>
                     <li class="menu_item"><a href="personal_account.html" class="menu_link">Личный кабинет</a></li>
                     <li class="menu_item"><a href="registration.html" class="menu_link">Регистрация</a></li>
                 </ul>
@@ -34,25 +33,18 @@
     <section class="forma_reg">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="reg_block_bird">
-                        <img src="./img/bird-1.png" class="block_bird_img_1">
-                    </div>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-10 offset-md-1">
                     <div class="reg_block">
                         <form action="sendmail.php" method="post" class="forma_block">
+                            <h3 class="forma_title">Зарегистрируйтесь!</h3>
                             <input type="text" placeholder="ФИО" class="reg_input" required></input>
                             <input type="email" placeholder="Email" class="reg_input" required></input>
-                            <input type="password" id="pass" name="password" minlength="8" class="reg_input"
+                            <input type="password" placeholder="Пароль" minlength="8" class="reg_input"
+                                required></input>
+                            <input type="password" placeholder="Повтор пароля" minlength="8" class="reg_input"
                                 required></input>
                             <button type="submit" class="forma_btn">Отправить</button>
                         </form>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="reg_block_bird">
-                        <img src="./img/bird-2.png" class="block_bird_img_2">
                     </div>
                 </div>
             </div>
