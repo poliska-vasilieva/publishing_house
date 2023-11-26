@@ -27,11 +27,19 @@ nav {
   font-size: 19px;
   font-weight: 300;
 }
-.menu_link:hover, .f_item:hover {
+.menu_link:hover, .f_item:hover, .auth_link:hover {
   text-decoration: none;
   color: #2D3025;
 }
 
+.contact_link {
+  text-decoration: none;
+  color: #2D3025;
+}
+
+.contact_link:hover {
+  color: #2D3025;
+}
 .menu_logo {
   width: 330px;
   height: 91px;
@@ -341,6 +349,16 @@ input::placeholder {
   color: #559A7B;
 }
 
+.auth_link {
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+  color: #559A7B;
+  font-size: 19px;
+  font-weight: 300;
+  text-align: center;
+
+}
 .img_sl {
   width: 240px;
   height: 390px;
