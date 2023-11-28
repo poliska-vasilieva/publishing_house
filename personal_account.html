@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Личный кабинет</title>
+    <link rel="shortcut icon" href="./img/m_logo.png" type="image/png">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu_item"><a href="index.html" class="menu_link">Валежина</a></li>
+                    <li class="menu_item"><a href="new_authors.html" class="menu_link">Новым авторам</a></li>
+                    <li class="menu_item"><a href="books.html" class="menu_link">Книги</a></li>
+                    <li class="menu_item"><a href="personal_account.html" class="menu_link">Личный кабинет</a></li>
+                    <li class="menu_item"><a href="registration.html" class="menu_link">Регистрация</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="forma_reg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="reg_block">
+                        <form action="sendmail.php" method="post" class="forma_block">
+                            <h3 class="forma_title">Личные данные</h3>
+                            <input type="text" id="name" placeholder="ФИО" required></input>
+                            <input type="email" id="email" placeholder="Email" required></input>
+                            <input type="date" id="date" placeholder="Дата рождения" required></input>
+                            <input type="tel" id="tel" placeholder="Номер телефона" required></input>
+                            <button type="submit" class="forma_btn">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <ul class="menu_f">
+                <li class="f_item"><a href="#" class="f_link">© Валежина, 2023</a></li>
+                <li class="f_item"><a href="#" class="f_link">420089, Респ. Татарстан, Казань, ул. Даурская, 7</a>
+                </li>
+                <li class="f_item"><a href="#" class="f_link">+7 (932) 845 88 84</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
