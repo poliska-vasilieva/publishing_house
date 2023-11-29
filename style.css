@@ -258,6 +258,11 @@ input {
   color: #559A7B;
 }
 
+#date {
+  padding-left: 20px;
+  font-size: 23px;
+}
+
 .book_v_block {
   width: 300px;
   height: 587px;
