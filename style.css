@@ -306,7 +306,7 @@ input {
 
 .forma_reg {
   background: linear-gradient(180deg, rgba(85, 154, 123, 0.92) 0%, rgba(212, 232, 219, 0.92) 88.96%);
-  padding-top: 61px;
+  padding: 47px 0px;
 }
 
 .forma_block {
